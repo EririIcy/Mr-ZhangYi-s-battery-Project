@@ -1,0 +1,31 @@
+SET PATH=D:\tools\keil-536\ARM\ARMCC\Bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\System32;C:\Program Files\Java\jdk-21\bin;D:\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin;D:\tools\openocd-20211118\OpenOCD-20211118-0.11.0\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;D:\tools\git\Git\cmd;C:\Users\21714\AppData\Local\Microsoft\WindowsApps;D:\tools\opencv\build\x64\vc15\bin;D:\tools\opencv\build\bin;C:\mingw64\bin;D:\tools\Microsoft VS Code\bin;D:\tools\JetBrains Rider 2023.2.2\bin;;D:\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin;D:\tools\openocd-20211118\OpenOCD-20211118-0.11.0\bin;;D:\tools\clion\CLion 2023.2.2\bin;;C:\Users\21714\.dotnet\tools
+SET CPU_TYPE=STM32F042G6Ux
+SET CPU_VENDOR=STMicroelectronics
+SET UV2_TARGET=try_uart_1
+SET CPU_CLOCK=0x007A1200
+"D:\tools\keil-536\ARM\ARMCC\Bin\ArmAsm" --Via "try_uart_1\startup_stm32f042x6._ia"
+"D:\tools\keil-536\ARM\ARMCC\Bin\ArmCC" --Via "try_uart_1\main.__i"
+"D:\tools\keil-536\ARM\ARMCC\Bin\ArmCC" --Via "try_uart_1\gpio.__i"
+"D:\tools\keil-536\ARM\ARMCC\Bin\ArmCC" --Via "try_uart_1\usart.__i"
+"D:\tools\keil-536\ARM\ARMCC\Bin\ArmCC" --Via "try_uart_1\stm32f0xx_it.__i"
+"D:\tools\keil-536\ARM\ARMCC\Bin\ArmCC" --Via "try_uart_1\stm32f0xx_hal_msp.__i"
+"D:\tools\keil-536\ARM\ARMCC\Bin\ArmCC" --Via "try_uart_1\stm32f0xx_hal_tim.__i"
+"D:\tools\keil-536\ARM\ARMCC\Bin\ArmCC" --Via "try_uart_1\stm32f0xx_hal_tim_ex.__i"
+"D:\tools\keil-536\ARM\ARMCC\Bin\ArmCC" --Via "try_uart_1\stm32f0xx_hal_uart.__i"
+"D:\tools\keil-536\ARM\ARMCC\Bin\ArmCC" --Via "try_uart_1\stm32f0xx_hal_uart_ex.__i"
+"D:\tools\keil-536\ARM\ARMCC\Bin\ArmCC" --Via "try_uart_1\stm32f0xx_hal_rcc.__i"
+"D:\tools\keil-536\ARM\ARMCC\Bin\ArmCC" --Via "try_uart_1\stm32f0xx_hal_rcc_ex.__i"
+"D:\tools\keil-536\ARM\ARMCC\Bin\ArmCC" --Via "try_uart_1\stm32f0xx_hal.__i"
+"D:\tools\keil-536\ARM\ARMCC\Bin\ArmCC" --Via "try_uart_1\stm32f0xx_hal_i2c.__i"
+"D:\tools\keil-536\ARM\ARMCC\Bin\ArmCC" --Via "try_uart_1\stm32f0xx_hal_i2c_ex.__i"
+"D:\tools\keil-536\ARM\ARMCC\Bin\ArmCC" --Via "try_uart_1\stm32f0xx_hal_gpio.__i"
+"D:\tools\keil-536\ARM\ARMCC\Bin\ArmCC" --Via "try_uart_1\stm32f0xx_hal_dma.__i"
+"D:\tools\keil-536\ARM\ARMCC\Bin\ArmCC" --Via "try_uart_1\stm32f0xx_hal_cortex.__i"
+"D:\tools\keil-536\ARM\ARMCC\Bin\ArmCC" --Via "try_uart_1\stm32f0xx_hal_pwr.__i"
+"D:\tools\keil-536\ARM\ARMCC\Bin\ArmCC" --Via "try_uart_1\stm32f0xx_hal_pwr_ex.__i"
+"D:\tools\keil-536\ARM\ARMCC\Bin\ArmCC" --Via "try_uart_1\stm32f0xx_hal_flash.__i"
+"D:\tools\keil-536\ARM\ARMCC\Bin\ArmCC" --Via "try_uart_1\stm32f0xx_hal_flash_ex.__i"
+"D:\tools\keil-536\ARM\ARMCC\Bin\ArmCC" --Via "try_uart_1\stm32f0xx_hal_exti.__i"
+"D:\tools\keil-536\ARM\ARMCC\Bin\ArmCC" --Via "try_uart_1\system_stm32f0xx.__i"
+"D:\tools\keil-536\ARM\ARMCC\Bin\ArmLink" --Via "try_uart_1\try_uart_1.lnp"
+"D:\tools\keil-536\ARM\ARMCC\Bin\fromelf.exe" "try_uart_1\try_uart_1.axf" --i32combined --output "try_uart_1\try_uart_1.hex"

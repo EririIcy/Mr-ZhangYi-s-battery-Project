@@ -1,0 +1,25 @@
+--cpu Cortex-M0
+"stm32f042g6-project\startup_stm32f042x6.o"
+"stm32f042g6-project\main.o"
+"stm32f042g6-project\stm32f0xx_it.o"
+"stm32f042g6-project\stm32f0xx_hal_msp.o"
+"stm32f042g6-project\stm32f0xx_hal_tim.o"
+"stm32f042g6-project\stm32f0xx_hal_tim_ex.o"
+"stm32f042g6-project\stm32f0xx_hal_rcc.o"
+"stm32f042g6-project\stm32f0xx_hal_rcc_ex.o"
+"stm32f042g6-project\stm32f0xx_hal.o"
+"stm32f042g6-project\stm32f0xx_hal_i2c.o"
+"stm32f042g6-project\stm32f0xx_hal_i2c_ex.o"
+"stm32f042g6-project\stm32f0xx_hal_gpio.o"
+"stm32f042g6-project\stm32f0xx_hal_dma.o"
+"stm32f042g6-project\stm32f0xx_hal_cortex.o"
+"stm32f042g6-project\stm32f0xx_hal_pwr.o"
+"stm32f042g6-project\stm32f0xx_hal_pwr_ex.o"
+"stm32f042g6-project\stm32f0xx_hal_flash.o"
+"stm32f042g6-project\stm32f0xx_hal_flash_ex.o"
+"stm32f042g6-project\stm32f0xx_hal_exti.o"
+"stm32f042g6-project\system_stm32f0xx.o"
+--strict --scatter "STM32F042G6-Project\STM32F042G6-Project.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "STM32F042G6-Project.map" -o STM32F042G6-Project\STM32F042G6-Project.axf
